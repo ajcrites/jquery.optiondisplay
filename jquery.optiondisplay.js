@@ -21,14 +21,14 @@
         });
     };
     $.fn.toggleOption = function () {
-       return this.each(function () {
+        return this.each(function () {
             var $this = $(this);
             if ($this.parent(containerSelector).length) {
-               $this.unwrap();
+                $this.unwrap();
             }
             else {
-               $this.wrap(containerElement);
+                $this.wrap(containerElement);
             }
-       }
+        });
     };
 })(jQuery, window, document);
